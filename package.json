@@ -4,7 +4,8 @@
   "description": "Step 1: Define the Purpose and Scope\r Identify the Problem: Determine what problem your API will solve or what functionality it will provide.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
+     "start": "node server.js", // Use node instead of nodemon
+    "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
