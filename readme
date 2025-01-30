@@ -1,0 +1,16 @@
+JWT token authentication 
+
+run node middleware/token.js to generate the authentication token copy the token , Use Postman ,hit endpt with
+- {
+  "Authorization": "Bearer YOUR_JWT_TOKEN"
+}
+
+
+The following routes are protected and require a valid JWT token in the Authorization header:
+
+GET /api/gadgets
+POST /api/gadgets
+PATCH /api/gadgets/:id
+DELETE /api/gadgets/:id
+POST /api/gadgets/:id/self-destruct
+GET /gadgets?status={status}
