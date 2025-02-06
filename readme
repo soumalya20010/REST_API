@@ -1,6 +1,29 @@
-JWT token authentication 
 
-run node middleware/token.js to generate the authentication token copy the token , Use Postman ,hit endpt with
+How to use the API
+
+1. check All the necessay installation require to run API
+2. Clone the Repository "git clone ..."
+3. Install Dependencies "npm install"
+
+4. Set Up Environment Variables
+
+# DB_NAME=
+# DB_USER=
+# DB_PASSWORD=
+# DB_HOST=localhost
+# DB_PORT=
+# PORT=
+# ACCESS_TOKEN_SECRET=
+
+5. Run the Server
+npm start 
+
+6. Generate a JWT Token
+
+"node middleware/token.js"
+This will output a JWT token. Copy the token for use in API request
+7. Make API Requests
+
 - {
   "Authorization": "Bearer YOUR_JWT_TOKEN"
 }
@@ -14,3 +37,10 @@ PATCH /api/gadgets/:id
 DELETE /api/gadgets/:id
 POST /api/gadgets/:id/self-destruct
 GET /gadgets?status={status}
+
+<!-- 
+weapons available ->
+    "name": "M416",
+    "name": "Rocket Launcher",
+    "name": " AK 47" -->
+   

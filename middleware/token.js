@@ -1,5 +1,6 @@
 import jwt from 'jsonwebtoken';
-
+import dotenv from 'dotenv';
+dotenv.config();
 const generateToken = () => {
   const payload = { username: 'testuser' }; // Customize the payload as needed
   const secret =  process.env.ACCESS_TOKEN_SECRET; // Use the same secret key as in your .env file
