@@ -38,6 +38,7 @@ DELETE /api/gadgets/:id
 POST /api/gadgets/:id/self-destruct
 GET /gadgets?status={status}
 
+LIVE link - https://rest-api-p70t.onrender.com
 <!-- 
 weapons available ->
     "name": "M416",
